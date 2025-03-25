@@ -201,7 +201,7 @@ public final class XPathContext implements NamespaceContext {
      * @return Namespaces as map
      */
     private static Map<String, String> namespacesAsMap(
-        final Object...namespaces) {
+        final Object... namespaces) {
         final ConcurrentMap<String, String> map =
             new ConcurrentHashMap<>(namespaces.length);
         for (int pos = 0; pos < namespaces.length; ++pos) {

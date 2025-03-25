@@ -53,8 +53,8 @@ import org.w3c.dom.Node;
  *
  * <p>The class is immutable and thread-safe.
  *
- * @since 0.1
  * @param <T> Time of items
+ * @since 0.1
  */
 @SuppressWarnings("PMD.TooManyMethods")
 final class ListWrapper<T> implements List<T> {

@@ -269,10 +269,8 @@ public final class XMLDocument implements XML {
 
     @Override
     public boolean equals(final Object another) {
-        final boolean eql;
-        if (!(another instanceof XML)) {
-            eql = false;
-        } else {
+        boolean eql = false;
+        if (another instanceof XML) {
             eql = this.toString().equals(another.toString());
         }
         return eql;
@@ -445,7 +443,7 @@ public final class XMLDocument implements XML {
     private Collection<SAXParseException> validate(final Validator validator) {
         final Collection<SAXParseException> errors =
             new CopyOnWriteArrayList<>();
-        validator.setErrorHandler(new XMLDocument.ValidationHandler(errors));
+        validator.setErrorHandler(new ValidationHandler(errors));
         try {
             validator.validate(new DOMSource(this.cache));
         } catch (final SAXException | IOException ex) {
