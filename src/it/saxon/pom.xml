@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- * SPDX-FileCopyrightText: Copyright (c) 2012-2025 Yegor Bugayenko
+ * SPDX-FileCopyrightText: Copyright (c) 2012-2026 Yegor Bugayenko
  * SPDX-License-Identifier: MIT
  *
  * Redistribution and use in source and binary forms, with or without
@@ -33,7 +33,7 @@
   <parent>
     <groupId>com.jcabi</groupId>
     <artifactId>jcabi</artifactId>
-    <version>1.39.0</version>
+    <version>1.40.1</version>
   </parent>
   <groupId>com.jcabi.xml</groupId>
   <artifactId>saxon</artifactId>
